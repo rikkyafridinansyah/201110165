@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rikky Afridinansyah Store - Home</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* CSS tambahan bisa ditambahkan di sini */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rikky Afridinansyah Store - Pembelian Diamond</h1>
+
+        <!-- Daftar Harga Diamond dalam Tabel -->
+        <h2>Daftar Harga Diamond</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Jumlah Diamond</th>
+                    <th>Harga (IDR)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>50 Diamond</td>
+                    <td>14,000</td>
+                </tr>
+                <tr>
+                    <td>100 Diamond</td>
+                    <td>29,000</td>
+                </tr>
+                <tr>
+                    <td>250 Diamond</td>
+                    <td>66,000</td>
+                </tr>
+                <tr>
+                    <td>500 Diamond</td>
+                    <td>122,000</td>
+                </tr>
+                <tr>
+                    <td>1000 Diamond</td>
+                    <td>300,000</td>
+                </tr>
+                <tr>
+                    <td>2500 Diamond</td>
+                    <td>500,000</td>
+                </tr>
+                <tr>
+                    <td>5000 Diamond</td>
+                    <td>1,150,000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Metode Pembayaran di atas pemilihan jumlah diamond -->
+        <h2>Metode Pembayaran</h2>
+        <p>Silakan lakukan pembayaran melalui:</p>
+        <ul>
+            <li>DANA: 082279118471</li>
+            <li>BRI (Bank Rakyat Indonesia): 7671 0101 4878 532</li>
+        </ul>
+
+        <hr> <!-- Garis pemisah -->
+
+        <form method="post" action="/Home/Pembelian" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="buktiTransfer">Unggah Bukti Transfer:</label>
+                <input type="file" class="form-control-file" id="buktiTransfer" name="buktiTransfer" accept="image/*">
+            </div>
+
+            <div class="form-group">
+                <label for="jumlahDiamond">Pilih Jumlah Diamond:</label>
+                <select class="form-control" name="jumlahDiamond" id="jumlahDiamond">
+                    <option value="50">50 Diamond</option>
+                    <option value="100">100 Diamond</option>
+                    <option value="150">150 Diamond</option>
+                    <option value="250">250 Diamond</option>
+                    <option value="500">500 Diamond</option>
+                    <option value="1000">1000 Diamond</option>
+                    <option value="2500">2500 Diamond</option>
+                    <option value="5000">5000 Diamond</option>
+                </select>
+            </div>
+
+            <br />
+            <button type="submit" class="btn btn-primary">Beli</button>
+        </form>
+    </div>
+
+    <!-- Script JavaScript Bootstrap (opsional, jika diperlukan) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

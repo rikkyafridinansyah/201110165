@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIKKY afridinansyah STore</title>
+     <!-- Link Bootstrap CSS -->
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            position: relative;
+            min-height: 100vh; /* Ensure the body takes up the full viewport height */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('th (4).jpeg'); /* Fix: Add quotation marks and a semicolon */
+            background-size: cover;
+            background-position: center;
+            /* Optionally, you can add more styles to the body */
+            background-color: rgb(41, 12, 12); /* Add a slightly darker background with some transparency */
+            /* color: white; */
+            /* font-family: Arial, sans-serif; */
+        }
+
+        .top-links {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+        }
+
+        .top-links a {
+            margin-left: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* You may need to adjust margins for specific elements to ensure proper spacing */
+        h1, form {
+            margin: 20px;
+        }
+        h1 {
+            color: yellow; /* Set the color of the h1 element to yellow */
+        }
+
+         /* Set the color of input elements to red */
+         input[type="text"], input[type="number"] {
+            color: red;
+        }
+
+        /* Set the color of label elements to orange */
+        label {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-links">
+        <a href="tel:+6282279118471">Contact</a>
+        <a href="shopeepay 082279118471">Payment</a>
+    </div>
+    <h1>Rikky Afridinansyah Store</h1>
+    <form id="topup-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="amount">ID game:</label>
+        <input type="number" id="amount" name="amount" min="1" required>
+        <button type="submit">Top Up</button>
+    </form>
+    <div class="bottom-links">
+        <a href="tel:+6282279118471">Contact</a>
+        <a href="shopeepay 082279118471">Payment</a>
+        <!-- Additional menu items -->
+        <a href="#">About Us</a>
+        <a href="#">FAQs</a>
+    </div>
+    <footer style="color: pink; text-align: center;">
+        <p>"Selamat datang di Rikky Afridinansyah Store"</p>
+        <p>%TOP UP sultan Harga Diskonan%</p>
+    </footer>
+    
+     <!-- Link Bootstrap JS and Popper.js (required for Bootstrap) -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <script src="script.js"></script>
+</body>
+</html>
